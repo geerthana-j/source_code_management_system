@@ -1,0 +1,94 @@
+/* .box{
+    margin:50px 300px;
+    background-color:#d9d9d9;
+    width: 50%;
+    text-align:center;
+    border:10px black;
+} */
+/* Apply a style reset to remove default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style the container */
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Style the label */
+  label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Style the input */
+  input[type="text"] {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+  }
+  
+  /* Style the file input */
+  input[type="file"] {
+    margin-bottom: 2rem;
+  }
+  
+  /* Style the file container */
+  .file-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  
+  /* Style the file name */
+  .file-name {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Style the remove button */
+  button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  /* Style the remove button on hover */
+  button:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Style the upload button */
+  button[type="submit"] {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #2196F3;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  /* Style the upload button on hover */
+  button[type="submit"]:hover {
+    background-color: #0c7cd5;
+  }
+  

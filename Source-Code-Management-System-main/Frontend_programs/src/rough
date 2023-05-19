@@ -1,0 +1,93 @@
+
+  // const handleDrop = (event) => {
+  //   event.preventDefault();
+  //   const newFiles = [...files];
+  //   console.log(event.dataTransfer.files.length);
+  //   for (let i = 0; i < event.dataTransfer.files.length; i++) {
+  //     newFiles.push(event.dataTransfer.files[i]);
+  //   }
+  //   setFiles(newFiles);
+  //   console.log('Drag over');
+  //   console.log(newFiles);
+  // };
+  // const handleDrop = (event) => {
+  //   event.preventDefault();
+  //   const newFiles = [...files];
+  //   let currentDirectoryPath = "";
+  //   const traverseFolder = (items) => {
+  //     for (let i = 0; i < items.length; i++) {
+  //       const item = items[i];
+  //       if (item.isFile) {
+  //         item.file((file) => {
+  //           console.log('file')
+  //           console.log(file);
+  //           // Build the relative path by appending the current directory path to the file name
+  //           const relativePath = currentDirectoryPath + "/" + item.name + "/" + file.name;
+  //           const newFile = new File([file], file.name, { type: file.type, lastModified: file.lastModified });
+  //           Object.defineProperty(newFile, "webkitRelativePath", {
+  //             value: relativePath,
+  //             writable: false,
+  //           });
+  //           newFiles.push(newFile);
+  //           setFiles(newFiles);
+  //         });
+  //       } else if (item.isDirectory) {
+  //         const directoryReader = item.createReader();
+  //         const previousDirectoryPath = currentDirectoryPath;
+  //         console.log(item.name);
+  //         currentDirectoryPath += "/" + item.name;
+  //         directoryReader.readEntries((entries) => {
+  //           console.log(entries);
+  //           traverseFolder(entries);
+  //           currentDirectoryPath = previousDirectoryPath;
+  //         });
+  //       }
+  //     }
+  //   };
+  //   const items = event.dataTransfer.items;
+  //   for (let i = 0; i < items.length; i++) {
+  //     const item = items[i];
+  //     const entry = item.webkitGetAsEntry();
+  //     console.log(entry);
+  //     if (entry.isFile) {
+  //       console.log(item);
+  //       item.getAsFile().then((file) => {
+  //         // Build the relative path by appending the current directory path to the file name
+  //         const relativePath = currentDirectoryPath + "/" + item.name + "/" + file.name;
+  //         const newFile = new File([file], file.name, { type: file.type, lastModified: file.lastModified });
+  //         Object.defineProperty(newFile, "webkitRelativePath", {
+  //           value: relativePath,
+  //           writable: false,
+  //         });
+  //         newFiles.push(newFile);
+  //         setFiles(newFiles);
+  //       });
+  //     } else if (entry.isDirectory) {
+  //       traverseFolder([entry]);
+  //     }
+  //   }
+  //  // console.log(newFiles);
+  //   setFiles(newFiles);
+  // };
+  
+  // const handleDrop = (event) => {
+  //   event.preventDefault();
+  //   const newFiles = [...files];
+  //   for (let i = 0; i < event.dataTransfer.files.length; i++) {
+  //     newFiles.push(event.dataTransfer.files[i]);
+  //   }
+  //   setFiles(newFiles);
+  // };
+
+  // const handleUpload = async () => {
+  //   const formData = new FormData();
+  //   for (let i = 0; i < files.length; i++) {
+  //       console.log(files[i]);
+  //     formData.append("files[]", files[i]);
+  //   }
+  //   console.log(formData);
+  //   await fetch("/api/upload", {
+  //     method: "POST",
+  //     body: formData,
+  //   });
+  // };

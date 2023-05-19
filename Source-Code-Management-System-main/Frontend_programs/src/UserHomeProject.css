@@ -1,0 +1,58 @@
+/* Apply a style reset to remove default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style the input */
+input[type="search"] {
+  width: 100%;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+/* Style the button */
+button {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Style the button on hover */
+button:hover {
+  background-color: #3e8e41;
+}
+
+/* Style the Create Project button */
+#button1 {
+  margin-top: 2rem;
+  margin-left:23rem;
+  margin-bottom: 1rem;
+  background-color: #2196F3;
+}
+
+/* Style the My Projects button */
+#button2 {
+  margin-bottom: 2rem;
+  margin-left:4rem;
+  background-color: #FF5722;
+}
